@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table border="2px" align="centre">
+        <thead>
+        <th>Bid</th>
+        <th>Bname</th>
+        <th>Bpages</th>
+    {% for book in obj %}
+        <tr>
+            <td>{{book.bid}}</td>
+            <td>{{book.bname}}</td>
+            <td>{{book.bpages}}</td>
+        </tr>
+        {% endfor %}<br><br><br>
+</form>
+<a href="/book/add/">click here to add</a>
+
+</body>
+</html>
