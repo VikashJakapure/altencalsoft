@@ -1,0 +1,13 @@
+{% extends 'book/base.html' %}
+
+
+{% block book_content %}
+<h2>Books</h2>
+<ul>
+{% for book in bookslist %}
+<li><a href="{%url 'book_app:details' book.id %} ">{{book.name}}</a></li>
+{% endfor %}<br><br>
+
+    <a href="/logout/">click here for logout</a>
+</ul>
+{% endblock %}

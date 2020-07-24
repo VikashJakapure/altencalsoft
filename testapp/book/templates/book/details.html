@@ -1,0 +1,13 @@
+{% extends 'book/base.html' %}
+
+
+{% block book_content %}
+{% if book %}
+<ul>
+    <li>name : {{book.name}}</li>
+    <li>description : {{book.description}}</li>
+    <li>page : {{book.pages}}</li>
+</ul>
+
+{% endif %}
+{% endblock %}
